@@ -1,0 +1,58 @@
+.user-details-form {
+    padding: 20px;
+    background-color: #fff;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    height: 77vh;
+    width: 79vw;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+  }
+  
+  .user-form {
+    text-align: center;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    background-color: #fff;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }
+
+  .user-address{
+    display: flex;
+    flex-direction: row;
+  }
+  .user-address input{
+    margin: 22px;
+    height: 10px;
+    width: 300px;
+  }
+  .user-address textarea {
+    margin-left: 22px;
+    width: 300px;
+  }/* UserDetails.css */
+/* ... (existing styles) */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  /* ... (other styles) */
+  
