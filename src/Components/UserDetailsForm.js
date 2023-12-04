@@ -1,9 +1,23 @@
 // UserDetailsForm.js
-import React from "react";
+import React, {useState} from "react";
 import "./UserDetails.css";
 
 function UserDetailsForm({ username, id }) {
   console.log("selectedId", id);
+  const [order, setOrder] = useState({
+    productId: '',
+    seller: '',
+    quantity: 0,
+    price: 0,
+  });
+  const createOrder = async (productId, seller, quantity, price) => {
+    setOrder({
+      productId,
+      seller,
+      quantity,
+      price,
+    });
+  };
   return (
     <div className="user-details-form">
       <div className="user-form">

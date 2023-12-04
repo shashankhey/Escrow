@@ -5,28 +5,17 @@
   height: 100vh; /* Make the container take the full height of the viewport */
 }
 
-.header {
-  background-color: #333;
-  color: white;
-  padding: 8px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-}
-
 .content-container {
   display: flex;
+  overflow: hidden;
 }
 
 .contact-details {
   width: 15%;
   background-color: #eee;
   padding: 10px;
-  height: 80vh;
+  height: 100vh;
+  overflow-y: hidden;
 }
 .search-icon {
   border-radius: 10px;

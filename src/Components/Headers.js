@@ -1,16 +1,21 @@
-// Header.js
 import React from "react";
-import "../App.css";
+import './Headers.css'; 
 
 function Header({ onLogout ,username,isLoggedIn}) {
   return (
-    <div className="header">
-      <h1>escrow</h1>
-      <div className="loggedin">
-      <h1>{username}</h1>
-      {isLoggedIn && <button onClick={onLogout} className="logout-button">Logout</button>}
-      </div>
+    <div className={`header ${isLoggedIn ? 'loggedin-header' : ''}`}>
+    <h1 className="excrow-text"><strong>EXCROW</strong></h1>
+    <div className="loggedin">
+      {isLoggedIn ? (
+        <>
+          <h1>{username}</h1>
+          <button style={{marginBottom: "15px"}} onClick={onLogout} className="logout-button">
+            Logout
+          </button>
+        </>
+      ) : null}
     </div>
+  </div>
   );
 }
 

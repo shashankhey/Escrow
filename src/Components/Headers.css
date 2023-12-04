@@ -1,0 +1,21 @@
+.header {
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.excrow-text {
+  margin-bottom: 10px;
+}
+
+.loggedin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logout-button {
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
