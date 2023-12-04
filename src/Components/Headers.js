@@ -4,7 +4,7 @@ import './Headers.css';
 function Header({ onLogout ,username,isLoggedIn}) {
   return (
     <div className={`header ${isLoggedIn ? 'loggedin-header' : ''}`}>
-    <h1 className="excrow-text"><strong>EXCROW</strong></h1>
+    <h1 className="excrow-text"><strong>ESCROW</strong></h1>
     <div className="loggedin">
       {isLoggedIn ? (
         <>
