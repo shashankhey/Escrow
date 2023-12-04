@@ -70,6 +70,9 @@ function UserDetailsForm({ username, id }) {
       <div className="user-form">
         <h2>Let's Connect With {username}</h2>
       </div>
+    {loading && <div className="loading-overlay">
+        <img src={LoadingGif} alt="Loading..." height={100} width={100}/>
+      </div>}
       <div className="user-address">
         <h4>Enter Address : </h4>
         <input
